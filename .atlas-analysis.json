@@ -1,0 +1,112 @@
+{
+  "projectType": "infrastructure",
+  "projectName": "SonarQube Community Branch Plugin",
+  "projectDescription": "A plugin that enables branch analysis and pull request decoration in SonarQube Community Edition",
+  "theme": "aspen",
+  "primaryColor": "#2c0444",
+  "lightColor": "#f13155",
+  "darkColor": "#d5cbdf",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "compatibility",
+              "features"
+            ]
+          },
+          {
+            "group": "Installation",
+            "pages": [
+              "installation/manual",
+              "installation/docker",
+              "installation/kubernetes",
+              "installation/troubleshooting"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "configuration/global-settings",
+              "configuration/branch-analysis",
+              "configuration/pull-request-decoration",
+              "configuration/github",
+              "configuration/gitlab",
+              "configuration/azure-devops",
+              "configuration/bitbucket"
+            ]
+          },
+          {
+            "group": "CI/CD Integration",
+            "pages": [
+              "ci-cd/overview",
+              "ci-cd/github-actions",
+              "ci-cd/gitlab-ci",
+              "ci-cd/azure-pipelines",
+              "ci-cd/jenkins",
+              "ci-cd/bitbucket-pipelines",
+              "ci-cd/cirrus-ci",
+              "ci-cd/other-ci-systems"
+            ]
+          },
+          {
+            "group": "Advanced",
+            "pages": [
+              "advanced/architecture",
+              "advanced/building-from-source",
+              "advanced/contributing"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Reference",
+        "groups": [
+          {
+            "group": "Configuration",
+            "pages": [
+              "reference/scanner-properties",
+              "reference/server-properties",
+              "reference/environment-variables"
+            ]
+          },
+          {
+            "group": "Resources",
+            "pages": [
+              "reference/faq",
+              "reference/migration",
+              "reference/support"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Branch analysis in SonarQube Community Edition",
+    "Pull request decoration for GitHub, GitLab, Azure DevOps, and Bitbucket",
+    "Auto-configuration for popular CI/CD platforms",
+    "Docker and Kubernetes deployment support",
+    "Custom branch retention policies",
+    "Multi-repository monorepo support"
+  ],
+  "publicApiSurface": [
+    "sonar.branch.name",
+    "sonar.branch.target",
+    "sonar.pullrequest.key",
+    "sonar.pullrequest.branch",
+    "sonar.pullrequest.base",
+    "sonar.scm.revision",
+    "CommunityBranchPlugin",
+    "CommunityBranchAgent",
+    "GithubActionsAutoConfigurer",
+    "GitlabCiAutoConfigurer",
+    "AzureDevopsAutoConfigurer",
+    "JenkinsAutoConfigurer",
+    "BitbucketPipelinesAutoConfigurer"
+  ]
+}
